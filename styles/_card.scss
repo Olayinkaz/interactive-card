@@ -1,0 +1,145 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .cards{
+        width: 43%;  
+        height: 250px;
+        background-color: $dark-blue;
+        border-radius: 1.5rem;
+        padding: 1.4rem;
+
+        .star {
+            background-color: $medium-grey;
+            width: 0.2rem;
+            height: 0.4rem;
+            padding: 0.8rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        img {
+            width: 0.6rem;
+            
+        }
+        
+        h1 {
+            font-size: 1rem;
+            color: $white;
+            margin-bottom: 8px;
+        }
+        .text {
+            font-size: 0.6rem;
+            color: $light-grey;
+            line-height: 15px;
+            margin-bottom: 15px;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+        .rating-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $medium-grey;
+          width: 0.2rem;
+          height: 0.4rem;
+          color: $light-grey;
+          padding: 0.8rem;
+          border-radius: 50%;
+          font-size: 10px;
+
+          &:hover {
+              background-color: $Orange;
+              cursor: pointer;
+          }
+         
+        }
+        .active {
+            background-color: $light-grey;
+             div {
+                color: $white;
+             }
+        }
+
+      }
+        .submit-btn {
+            width: 100%;
+            font-size: 9px;
+            text-transform: uppercase;
+            height: 25px;
+            color: $light-grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:  $Orange; 
+            border-radius: 15px;
+            
+            &:hover {
+                background-color: $white;
+                color: $Orange;
+                cursor: pointer;
+            }
+
+        }
+        .card-container-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+          
+            .result{
+                background-color: $medium-grey;
+                border-radius: 15px;
+                color: $Orange;
+                font-size: 0.7rem;
+                padding: 7px;
+                margin-bottom: 18px;
+            }
+            h2 {
+                color: white;
+                font-size: 19px;
+                margin-bottom: 15px;
+            }
+
+        .text {
+            text-align: center;
+        }
+
+            img {
+                width: 6rem;
+                margin-bottom: 15px;
+            }
+            
+
+         }
+         .hide {
+            display: none; 
+         }
+        }
+    }
+
+    @media screen and (max-width: 440px) {
+    .cards{
+        margin: auto;
+
+    }
+    .submit-btn {
+        margin-bottom: 20px;
+    }
+    }
+
+    @media screen and (min-width: 500px) {
+        .cards {
+            max-width: 50px;
+        }
+    }
